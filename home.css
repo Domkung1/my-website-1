@@ -67,4 +67,34 @@
     gap:40px;
     margin-top:30px;
     justify-content:center;  /* 🔥 ตัวสำคัญ */
+
+}
+
+@media (max-width: 768px){
+
+    /* การ์ดหลักเหลือ 1 คอลัมน์ */
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* กิจกรรมเหลือ 1 คอลัมน์ */
+    .card-containeratt{
+        grid-template-columns: 1fr;
+    }
+
+    /* รูปเรียงลง */
+    .college-images{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* ขนาดตัวอักษรลดลง */
+    .hero h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
 }
