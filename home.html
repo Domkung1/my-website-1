@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>วิทยาลัยเทคนิคแพร่</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ===== TOP BANNER ===== */
+.top-banner{
+    width:100%;
+    height:160px;
+    background-image: url('immage/Screenshot 2026-02-19 223917.png');
+    background-size:cover;
+    background-position:center;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    width:100%;
+    background:#b50404;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    opacity:0.8;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    background-image: url('immage/Professional Engineer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#1877f2;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+
+    font-size:20px;      /* 🔥 ปรับขนาดตัวอักษร */
+    font-weight:bold;    /* 🔥 ทำให้ตัวหนา */
+
+    transition:0.3s;
+}
+
+.btn2{
+    display:inline-block;
+    padding:12px 25px;
+    background:#36be00;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+
+    font-size:20px;      /* 🔥 ปรับขนาดตัวอักษร */
+    font-weight:bold;    /* 🔥 ทำให้ตัวหนา */
+
+    transition:0.3s;
+}
+
+/* ===== SECTION ===== */
+section{
+    min-height:100vh;
+    padding:100px 10%;
+    text-align:center;
+}
+
+.section-light{
+    background:white;
+}
+
+.section-dark{
+    background:#eef3ff;
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* ===== CARDS ===== */
+.card-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);  /* 🔥 3 คอลัมน์ตายตัว */
+    gap:25px;
+    margin-top:30px;
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+.college-text{
+    font-size:20px;      /* เท่ากับ size="5" ประมาณนี้ */
+    line-height:1.5;     /* เพิ่มระยะห่างอ่านง่าย */
+    text-align:left;     /* ชิดซ้าย */
+    max-width:1200px;     /* ไม่ให้ยาวเกินไป */
+    margin:0 auto 20px;  /* จัดกึ่งกลางกรอบ แต่ข้อความชิดซ้าย */
+}
+.college-text2{
+    font-size:30px;      /* เท่ากับ size="5" ประมาณนี้ */
+    line-height:1.5;     /* เพิ่มระยะห่างอ่านง่าย */
+    text-align:center;     /* ชิดซ้าย */
+    max-width:1200px;     /* ไม่ให้ยาวเกินไป */
+    margin:0 auto 20px;
+    font-weight: bold;  /* จัดกึ่งกลางกรอบ แต่ข้อความชิดซ้าย */
+}
+
+</style>
+</head>
+<body>
+
+<div class="top-banner"></div>
+
+<nav>
+    <a href="#home">หน้าหลัก</a>
+    <a href="#college">ข้อมูลวิทยาลัย</a>
+    <a href="#courses">สาขาที่เปิดสอน</a>
+    <a href="#activity">ภาพกิจกรรม</a>
+    <a href="#management">คณะผู้บริหาร</a>
+    <a href="#computer">ช่างเทคนิคคอมพิวเตอร์</a>
+    <a href="#other">สาขาอื่นๆ</a>
+    <a href="#contact">ติดต่อ</a>
+</nav>
+
+<section id="home" class="hero">
+    <h1>วิทยาลัยเทคนิคแพร่</h1>
+    <p>ศึกษาดี มีวินัย ไฝ่คุณธรรม กิจกรรมเด่น</p>
+    <a href="#courses" class="btn">ดูสาขาที่เปิดสอน</a>
+</section>
+
+<section id="college" class="section-light">
+    <h2>ข้อมูลวิทยาลัย</h2>
+
+    <p class="college-text">
+        วิทยาลัยเทคนิคแพร่ จัดตั้งขึ้นเมื่อปี พ.ศ. 2480 ใช้ชื่อครั้งแรกว่า 
+        "โรงเรียนประถมช่างไม้" โดยอาศัยสถานที่ของ โรงเรียนฝึกหัดครูประกาศนียบัตรจังหวัดแพร่
+        มีครู 1 คน นักเรียน 12 คน ได้สร้างโรงฝึกงาน และอาคารต่าง ๆ พ.ศ. 2519 ได้รวมกับโรงเรียนการช่างสตรีแพร่ 
+        ยกฐานะขึ้นเป็น วิทยาลัยอาชีวศึกษาแพร่ วิทยาเขต 1 สังกัดกองวิทยาลัยอาชีวศึกษา กรมอาชีวศึกษา กระทรวงศึกษาธิการ
+        พ.ศ. 2522 กระทรวงศึกษาธิการได้ประกาศให้วิทยาลัยเทคนิคแพร่ แยกออกจากวิทยาลัยอาชีวศึกษาแพร่และจัดตั้งเป็น “วิทยาลัยเทคนิคแพร่”
+    </p>
+    <p class="college-text2">
+        วิสัยทัศน์
+    </p>
+    <p class="college-text">
+        วิทยาลัยเทคนิคแพร่ เป็นสถาบันการศึกษาที่มีความพร้อมในการจัดการศึกษาวิชาชีพทุกระดับ ให้ได้คุณภาพตามมาตรฐาน
+        และให้บริการด้านวิชาชีพตามความต้องการของตลาดแรงงาน ชุมชน ท้องถิ่น
+    </p>
+        <!-- เพิ่มรูปตรงนี้ -->
+    <div class="college-images">
+        <img src="https://phraekaw.com/wp-content/uploads/2023/10/IMG_20210620_085550-2-jpg.webp">
+        <img src="https://image.makewebcdn.com/makeweb/m_750x0/BnYGKP9Kn/new/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A_01.jpg?v=202405291424">
+        <img src="Screenshot 2026-02-21 131939.png">
+    </div>
+    
+
+</section>
+
+<section id="courses" class="section-dark">
+    <h2>สาขาที่เปิดสอน</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="556534262_1261822972628974_5294061244780548122_n.jpg">
+            <h3>สาขาวิชาช่างเทคนิคคอมพิวเตอร์</h3>
+            <p>เรียนรู้เกี่ยวกับฮาร์ดแวร์ ซอฟต์แวร์ และ ระบบเครือข่าย</p>
+        </div>
+        <div class="card">
+            <img src="department/zone15_photo7.webp">
+            <h3>สาขาวิชาช่างยนต์</h3>
+            <p>เรียนรู้เกี่ยวกับการซ่อมบำรุงและวิเคราะห์เครื่องยนต์</p>
+        </div>
+        <div class="card">
+            <img src="department/zone15_photo8.png">
+            <h3>สาขาวิชาไฟฟ้ากำลัง</h3>
+            <p>เรียนรู้เกี่ยวกับระบบไฟฟ้าอาคารและอุตสาหกรรม</p>
+        </div>
+        <div class="card">
+            <img src="department/ช่างยนต์.jpg">
+            <h3>สาขาวิชาช่างกลโรงงาน</h3>
+            <p>เรียนรู้เกี่ยวกับการซ่อมบำรุงและวิเคราะห์เครื่องจักรกลโรงงาน</p>
+        </div>
+        <div class="card">
+            <img src="department/ช่างสถาปัตยกรรม.jpg">
+            <h3>สาขาวิชาสถาปัตยกรรม</h3>
+            <p>เรียนรู้เกี่ยวกับการออกแบบวางผังก่อสร้างและสร้างสรรค์ปฏิมากรรมต่างๆ</p>
+        </div>
+        <div class="card">
+            <img src="department/ช่างสำรวจ.jpg">
+            <h3>สาขาวิชาเทคนิควิศวกรรมสำรวจ</h3>
+            <p>เรียนรู้เกี่ยวกับการรังวัด ทำแผนที่ และกำหนดตำแหน่งบนพื้นโลก</p>
+        </div>
+            <div class="card">
+            <img src="department/Screenshot (200).png">
+            <h3>สาขาวิชาช่างก่อสร้าง</h3>
+            <p>เรียนรู้เกี่ยวกับการสร้างอาคารและสิ่งปลูกสร้าง ครอบคลุมงานโครงสร้าง งานปูน งานไม้ งานสำรวจ และการอ่านแบบแปลน</p>
+        </div>
+        <div class="card">
+            <img src="department/ช่างอิเล็กทรอนิกส์.jpg">
+            <h3>สาขาวิชาอิเล็กทรอนิกส์</h3>
+            <p>เรียนรู้เกี่ยวกับการออกแบบและซ่อมบำรุงระบบอิเล็กทรอนิกส์</p>
+        </div>
+        <div class="card">
+            <img src="department/zone15_photo3.png">
+            <h3>สาขาวิชาช่างเชื่อมโลหะ</h3>
+            <p>เรียนรู้เกี่ยวกับการออกแบบและซ่อมบำรุงระบบเชื่อมโลหะ</p>
+        </div>
+    </div>
+</section>
+
+<section id="activity" class="section-light">
+    <h2>ภาพกิจกรรม</h2>
+    <div class="card-containeratt">
+    <div class="cardatt">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/629863965_1453317749913017_7983704717155290244_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=RBklI03RyHQQ7kNvwEe6Qwq&_nc_oc=AdmwhMS1L1_ym7CGYdrUBySn1aPv5zs3SpzBwv3fzUQamFCdcSklL_czy4DZYqZzfB8&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=kMF4P6JOxthdmoShVan-Gw&oh=00_AfuZEndCb0wYW0fLpaH2QK4r2Z-il1UvvZD6AT-Huvc_Gw&oe=699F89C7">
+      </div>
+    <div class="cardatt">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/627542464_1445333830711409_7299916018599606093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=1bSvzqwE6scQ7kNvwHPtYGs&_nc_oc=AdmSBQUCIq4WojKpuGu1so0kOlybi68L4AJ88W3nzksOPQdGWGfGYq_abIcv9GtnqPM&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=XBWAfKyZEoIfje8pIfEF6g&oh=00_AfuvCSQdT_7JM58VEoKSKICrZ0tyBVIpTJyCZh0IFo1wEw&oe=699F6DAC">
+      </div>
+    <div class="cardatt">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/623353029_1442281954349930_563470657628592416_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd6889&_nc_ohc=mZs_EOfOv54Q7kNvwGOJCuJ&_nc_oc=AdkHMJ0PLEe-51IcEReQaleprMPOTACsiMVB5Db5QC6qQA3SnmAfI2wD0Ma51e9SzA4&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=jpTdwwLYshmhsUuaGDfn4Q&oh=00_AfubOtw_yKJkbGiDIKw2VgfrF68UKViAAHG7affIduWhNg&oe=699F8094">
+      </div>
+    <div class="cardatt">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/612591317_1425241069387352_7793338006175448686_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd6889&_nc_ohc=Z6ls7cjAEz8Q7kNvwGJ3HC0&_nc_oc=AdkChPV7knIXEvqt0dszMTt8IFR0mx6jhvrbqa0coHoPwVkQlMm2UD3qRFELxjdVYxE&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=16zrQSQCJRScaFNOIIkM0w&oh=00_AftApWoBbgE60Lp098pHdFL6PKnvIhwaAhAiYK8Ik6bNcA&oe=699F93EF">
+      </div>
+    </div>
+</section>
+
+<section id="management" class="section-dark">
+    <h2>ข้อมูลคณะผู้บริหารวิทยาลัย</h2>
+    <div class="gallery">
+     <img src="Screenshot 2026-02-21 203032.png">   
+    </div>
+</section>
+
+<section id="computer" class="section-light">
+    <h2>สาขาวิชาช่างเทคนิคคอมพิวเตอร์</h2>
+    <p>เน้นการปฏิบัติจริงด้านฮาร์ดแวร์ ซอฟต์แวร์ และเครือข่าย</p>
+        <div class="college-images">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/545746202_1240241034787168_6102097612184308734_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=4-oP5i4n8-EQ7kNvwEmuUA8&_nc_oc=AdknB7Ef2fXylQmvh9HUSMP0mi_xtvDwo_sRtqiHv1Ms7j2Y8GLjrOs_Gd1tR-hSXrY&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=EezW-yY2IWdC-lZmtjLkYw&oh=00_AfstjuTQ2ctaVJCUDha5NcvwQLjHCCe8lMSJ6zVLMkKf2w&oe=699F8875">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/556826514_1261823485962256_3360372482901204873_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=_X7zonKqn4QQ7kNvwFq9Cya&_nc_oc=AdkYhgyUkt6VXvUcJxddHZvWffrCwxN-c7kSIpqsr95-OMBPwso9pBhU2mggVl6APzs&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=AlD3QosyjnHhSuaAoTDXhA&oh=00_AfvPuDN_bPUOabKoPXou6IloOb3O308ACHOqT1jgQUrfDg&oe=699F866A">
+        <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/627924402_1376274501183820_953734907247449941_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=VXbN_nxUnC0Q7kNvwH1gPcc&_nc_oc=AdlaZg8nNFrUOIB-G80As_GNPLhC5VWrVqFO0xLuM4nrCK0pEtwdBI6HCkkfpqLlqmE&_nc_zt=23&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=1TmhDHQkDywzINwWLa61qQ&oh=00_Aft8WL4vKVReWcP8_I9T_jFvZVPrvWTYYBjnq_c8QmuEFA&oe=699F8DEE">
+    </div>
+    <br>
+        <p class="college-text">
+         แผนกเทคนิคคอมพิวเตอร์ วิทยาลัยเทคนิคแพร่ ตั้งอยู่เลขที่  5  ถนนเหมืองหิต ตำบลในเวียง อำเภอเมืองแพร่  
+         จังหวัดแพร่ รหัสไปรษณีย์  54000  มีพื้นที่ทั้งหมด 73 ไร่ 3 งาน 40.76 ตารางวา โทรศัพท์ 054-511142  
+         โทรสาร 054-511811  www.ctnphrae.com,www.facebook.com/ctnphrae   E-Mail  techniccom_pr@hotmail.com 
+         จัดตั้งขึ้นเมื่อปี พ.ศ. 2552 ใช้ชื่อครั้งแรกว่า "แผนกเทคนิคคอมพิวเตอร์”
+    </p>
+        <p class="college-text2">
+        หลักสูตรการเรียนการสอน
+    </p>
+        <p class="college-text">
+         1.ระดับปวช.หลักสูตรประกาศนียบัตรวิชาชีพ พุทธศักราช 2556 (เพิ่มเติม พ.ศ.2557) 
+        ประเภทวิชาอุตสาหกรรม สาขาวิชาเทคนิคคอมพิวเตอร์ http://bsq2.vec.go.th/course/2556/course56new.html
+        หลักสูตรประกาศนียบัตรวิชาชีพสาขาวิชาเทคนิคคอมพิวเตอร์(ใหม่)
+    </p>
+        <p class="college-text">
+        2.ระดับ ปวช.หลักสูตรประกาศนียบัตรวิชาชีพ พุทธศักราช 2562 ประเภทวิชาอุตสาหกรรม สาขาวิชาเทคนิคคอมพิวเตอร์
+        http://bsq.vec.go.th/Portals/9/Course/20/2562/20100/20128v4.pdf
+    </p>
+        <p class="college-text">
+        3.ระดับปวส.หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง พุทธศักราช 2546 
+        ประเภทวิชาอุตสาหกรรม สาขาวิชาเทคโนโลยีคอมพิวเตอร์ สาขางานคอมพิวเตอร์ซอฟแวร์ คลิกดู หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง 2557
+    </p>
+</section>
+
+<section id="other" class="section-dark">
+    <h2>สาขาวิชาอื่นๆ</h2>
+    <div class="card-container">
+    <div class="card">
+        <img src="https://www.tgi.or.th/public/image/couse/1669374274.jpg">
+        <h3>สาขาเทคโนโลยีแม่พิมพ์</h3>
+        <p>เรียนรู้เกี่ยวกับ การออกแบบ การผลิต และซ่อมบำรุงแม่พิมพ์โลหะ</p>
+    </div>
+    <div class="card">
+        <img src="department/เทคโรโลยีสารสนเทศ.jpg">
+        <h3>สาขาเทคโนโลยีสารสนเทศ</h3>
+        <p>เรียนรู้เกี่ยวกับการประยุกต์ใช้คอมพิวเตอร์ เครือข่าย และซอฟต์แวร์ เพื่อจัดการ จัดเก็บ ประมวลผล และส่งผ่านข้อมูลในโลกดิจิทัล</p>
+    </div>
+    <div class="card">
+        <img src="https://www.grandprix.co.th/wp-content/uploads/2023/02/BMW-Thailand-Service-Apprentice-4.jpg">
+        <h3>สาขาเทคโนโลยียานยนต์ไฟฟ้า</h3>
+        <p>เรียนรู้เกี่ยวกับระบบขับเคลื่อนที่ใช้พลังงานไฟฟ้าจากแบตเตอรี่แทนเครื่องยนต์สันดาปภายใน</p>
+    </div>
+    </div>          
+</section>
+
+<section id="contact" class="section-light">
+    <h2>ติดต่อวิทยาลัย</h2>
+    <p>โทร 02-xxx-xxxx | Tecphrae@gmail.com </p>
+    <p>5 ถนนเหมืองหิต ตำบลในเวียงอำเภอเมือง จังหวัดแพร่</p>
+    <br>
+    <h2>รับข่าวสารจากเรา</h2>
+    <a href="https://www.facebook.com" target="_blank" class="btn">
+    ไปที่ Facebook
+</a>
+ <a href="https://line.me/ti/p/~5PTC" target="_blank" class="btn2">
+    ไปที่ Line
+</a>
+
+</section>
+
+<footer>
+© 2026 วิทยาลัยเทคนิคแพร่
+</footer>
+
+</body>
+</html>

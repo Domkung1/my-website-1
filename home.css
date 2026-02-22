@@ -1,0 +1,70 @@
+
+.college-images {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    align-items: center;
+    gap: 20px; /* ระยะห่างระหว่างรูป */
+    margin-top: 30px;
+}
+
+.college-images img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow:hidden;   /* 🔥 ทำให้รูปไม่ทะลุขอบ */
+    display:flex;
+    flex-direction:column;
+}
+
+.card img{
+    width:100%;
+    height:180px;      /* ปรับความสูงรูป */
+    object-fit:cover;  /* ไม่ให้รูปยืด */
+}
+
+.card h3{
+    margin:15px 0 5px;
+}
+
+.card p{
+    padding:0 15px 15px;
+}
+
+
+
+.cardatt{
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow:hidden;   /* 🔥 ทำให้รูปไม่ทะลุขอบ */
+    display:flex;
+    flex-direction:column;
+    width: 500px;
+    
+}
+
+.cardatt img{
+    width: 100%;
+    height:250px;      /* ปรับความสูงรูป */
+    object-fit:cover;  /* ไม่ให้รูปยืด */
+}
+
+.cardatt h3{
+    margin:15px 0 5px;
+}
+
+.cardatt p{
+    padding:0 15px 15px;
+}
+.card-containeratt{
+    display:grid;
+    grid-template-columns: repeat(2, 500px); /* กำหนดกว้างเท่าการ์ด */
+    gap:40px;
+    margin-top:30px;
+    justify-content:center;  /* 🔥 ตัวสำคัญ */
+}
